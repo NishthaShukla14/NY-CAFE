@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niyash Cafe</title>
+    <!-- CSS stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Niyash</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-counter" id="cart-counter">0</span>
+            </div>
+            <!-- Mobile menu button placeholder -->
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Sidebar / Modal -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Dynamic cart items will be injected here via JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="total-price">$0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Niyash Cafe</h1>
+            <p>Experience the warmth of freshly brewed coffee and artisanal pastries in a cozy, modern atmosphere.</p>
+            <a href="#menu" class="cta-btn">View Menu</a>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hot">Hot Drinks</button>
+                <button class="filter-btn" data-filter="cold">Cold Drinks</button>
+                <button class="filter-btn" data-filter="pastry">Pastries</button>
+            </div>
+            <div class="menu-grid" id="menu-grid">
+                <!-- Menu items will be injected here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Inside Niyash Cafe">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">Our Story</h2>
+                <p>At Niyash, we believe that coffee is more than just a drink—it's an experience. Founded with a passion for bringing people together, our cozy haven offers the perfect blend of modern comfort and artisanal craftsmanship.</p>
+                <p>We source only the finest quality ingredients, working closely with local roasters and bakers to ensure every cup and every bite brings joy to your day. Whether you're here to work, relax, or catch up with friends, Niyash is your home away from home.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3>Niyash Cafe</h3>
+                <p>A cozy spot for coffee lovers.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Location</h3>
+                <p>123 Coffee Lane<br>Brew City, BC 10101</p>
+            </div>
+            <div class="footer-col">
+                <h3>Hours</h3>
+                <p>Mon - Fri: 7am - 7pm<br>Sat - Sun: 8am - 8pm</p>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Niyash Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript logic -->
+    <script src="script.js"></script>
+</body>
+</html>
